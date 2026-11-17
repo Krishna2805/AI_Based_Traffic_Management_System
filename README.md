@@ -47,15 +47,19 @@ AI-Based-Traffic-Management-System/
 Clone the repository and install required Python packages:
 
 ```bash
-git clone <your-repository-url>
-cd AI-Based-Traffic-Management-System
+git clone https://github.com/Krishna2805/AI_Based_Traffic_Management_System.git
+cd AI_Based_Traffic_Management_System
 pip install -r requirements.txt
 ```
 
-### 3. Model Weights (`yolov8m.pt`)
-- The system uses the YOLOv8 Medium model (`yolov8m.pt`).
-- If `yolov8m.pt` is not present in `Object Detection/src/`, Ultralytics will **automatically download** official weights upon first execution of `main.py`.
-- Alternatively, you can download `yolov8m.pt` manually from [Ultralytics GitHub Releases](https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov8m.pt) and place it inside `Object Detection/src/`.
+### 3. Model Weights & Pre-Trained RL Q-Table
+- **YOLOv8 Medium (`yolov8m.pt`)**: Ultralytics automatically downloads official weights on first execution of `main.py` if not present in `Object Detection/src/`.
+- **Pre-Trained Q-Table (`q_table.npy`)**: A pre-trained 1,024-state Q-table is bundled directly in `Q-Learning model/src/q_table.npy` (32 KB), allowing instant deterministic evaluation without requiring a 2,000-episode training run.
+
+**1-Line Verification Command:**
+```bash
+cd "Q-Learning model/src"; python QLearning.py --demo-only
+```
 
 ---
 
