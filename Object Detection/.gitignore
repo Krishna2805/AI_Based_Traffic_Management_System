@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# YOLO / training artifacts
+runs/
+weights/
+*.pt
+*.pth
+
+# Logs
+*.log

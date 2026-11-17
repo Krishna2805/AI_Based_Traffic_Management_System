@@ -1,0 +1,23 @@
+# Requirements
+
+## Python Dependencies
+ultralytics==8.0.199
+numpy==1.24.3
+pandas==2.0.1
+opencv-python==4.7.0.72
+cvzone==1.6.1
+matplotlib==3.7.1
+pygame==2.3.0
+scipy==1.10.1
+scikit-learn==1.2.2
+tkinter  
+torch>=1.10.0  # CUDA-compatible version recommended
+torchvision>=0.11.0
+
+## Optional (Recommended)
+# CUDA Toolkit (for GPU acceleration)
+# cudatoolkit>=11.3.1
+
+## Notes
+# Ensure compatible versions with your Python installation
+# For GPU support, install CUDA-compatible PyTorch version

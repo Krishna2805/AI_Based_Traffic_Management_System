@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Model weights and YOLO artifacts
+*.pt
+*.pth
+runs/
+weights/
