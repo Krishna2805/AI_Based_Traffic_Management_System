@@ -27,15 +27,10 @@ dist/
 *.egg-info/
 .ipynb_checkpoints/
 
-# Supplementary Documentation & Private Local Notes (Keep only README.md for GitHub)
+# Local developer notes & scratch files
 PROJECT_REPORT.md
 *.local.md
 .*.local.md
-.dev_notes.local.md
-DEFECTS_AND_BACKLOG.md
-*DEFECT*
-*BACKLOG*
-*ISSUE*
 
 # Large models & weights (YOLO weights ~50MB auto-downloaded on first run)
 *.pt
